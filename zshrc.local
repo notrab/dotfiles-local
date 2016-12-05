@@ -1,0 +1,4 @@
+eval "$(rbenv init - --no-rehash)"
+
+export PATH="./node_modules/.bin:$PATH"
+export PATH="$HOME/.bin:$PATH"

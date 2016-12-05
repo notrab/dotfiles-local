@@ -1,0 +1,12 @@
+alias l="ls -la"
+alias be="bundle exec"
+alias b="bundle install"
+alias rs="bin/rails s"
+alias rc="bin/rails c"
+
+alias gcb="g checkout -b "
+alias gc="g clone"
+alias gp="g push"
+alias gfu="g fetch upstream"
+alias gpu="g pull"
+alias gph="git push heroku master"

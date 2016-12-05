@@ -1,0 +1,18 @@
+brew 'httpie'
+brew 'highlight'
+
+tap 'caskroom/cask'
+
+cask 'google-chrome'
+cask 'spotify'
+cask 'vlc'
+cask 'mongodb'
+cask 'iterm2'
+cask 'atom'
+cask 'robomongo'
+cask 'ngrok'
+cask 'skype'
+cask 'postman'
+cask 'sketch'
+cask 'spectacle'
+cask 'the-unarchiver'

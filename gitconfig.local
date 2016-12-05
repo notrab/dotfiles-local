@@ -1,0 +1,19 @@
+[user]
+  name = Jamie Barton
+  email = jamie@launchmade.com
+[shell]
+  username = notrab
+[github]
+  username = notrab
+[core]
+  editor = vim
+  whitespace = trailing-space,cr-at-eol
+[alias]
+  co = checkout
+  b = branch
+  di = diff
+  aa = add --all
+  amend = comment --amend
+  fa = fetch --all
+[pull]
+  rebase = true
