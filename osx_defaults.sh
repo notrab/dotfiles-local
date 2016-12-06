@@ -1,3 +1,9 @@
+echo "Disable local Time Machine backups"
+hash tmutil &> /dev/null && sudo tmutil disablelocal
+
+echo "Disable Time Machine asking to use new external drive for backups"
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
 echo "Immediately require password after sleep or screensaver"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
@@ -25,12 +31,6 @@ defaults write com.apple.commerce AutoUpdate -bool true
 echo "Expand print dialog in Chrome by default"
 defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool true
-
-echo "Disable local Time Machine backups"
-hash tmutil &> /dev/null && sudo tmutil disablelocal
-
-echo "Disable Time Machine asking to use new external drive for backups"
-defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 echo "Disable the 'Are you sure you want to open this application?' dialog."
 defaults write com.apple.LaunchServices LSQuarantine -bool false
