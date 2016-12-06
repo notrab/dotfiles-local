@@ -37,7 +37,11 @@ fancy_echo "Cleaning up..."
 brew cleanup
 brew cask cleanup
 
+fancy_echo "Modifying macOS defaults..."
 sh ./.osx_defaults.sh
+
+fancy_echo "Fixing new-express-babel-starter bin permissions..."
+chmod 500 ~/.bin/new-express-babel-starter
 
 if [ -r "$HOME/.rcrc" ]; then
   fancy_echo "Updating dotfiles ..."

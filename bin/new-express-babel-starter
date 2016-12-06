@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+git clone --depth=1 --branch=master https://github.com/notrab/express-babel-starter.git $1 && cd $1 && rm -rf .git && git init && git add . && git commit -am "Initial commit" && cp .env.sample .env && npm install
