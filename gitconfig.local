@@ -6,7 +6,7 @@
 [github]
   username = notrab
 [credential]
-  helper = oxskeychain
+  helper = osxkeychain
 [core]
   editor = atom --wait
   whitespace = trailing-space,cr-at-eol
