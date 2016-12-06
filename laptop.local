@@ -4,6 +4,11 @@ brew bundle --file=- <<EOF
 brew 'httpie'
 brew 'highlight'
 brew 'yarn'
+brew 'mysql'
+brew 'tree'
+brew 'speedtest_cli'
+brew 'rbenv-default-gems'
+brew 'rbenv-binstubs'
 
 tap 'caskroom/cask'
 
