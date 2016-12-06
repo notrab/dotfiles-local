@@ -32,7 +32,7 @@ fancy_echo "Cleaning up..."
 brew cleanup
 brew cask cleanup
 
-sh ./osx_defaults.sh
+sh ./.osx_defaults.sh
 
 if [ -r "$HOME/.rcrc" ]; then
   fancy_echo "Updating dotfiles ..."
