@@ -1,5 +1,3 @@
-project_name = File.basename(__dir__)
-
 uncomment_lines 'Gemfile', /gem 'redis'/
 
 gem 'sidekiq'
