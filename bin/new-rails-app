@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+rails new $1 -m ~/.rails/template.rb
