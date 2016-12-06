@@ -1,0 +1,10 @@
+"*":
+  core:
+    telemetryConsent: "limited"
+  editor:
+    fontFamily: "Operator Mono"
+    fontSize: 15
+  "exception-reporting":
+    userId: "85619f8b-ad66-00ee-805c-c7e1e4990c17"
+  welcome:
+    showOnStartup: false

@@ -1,6 +1,10 @@
+alias edf="cd ~/dotfiles-local && atom ."
+alias hosts="sudo atom /etc/hosts"
+
 alias l="ls -la"
-alias be="bundle exec"
 alias b="bundle install"
+alias bc="bundle check"
+alias be="bundle exec"
 alias rs="bin/rails s"
 alias rc="bin/rails c"
 
@@ -10,3 +14,11 @@ alias gp="g push"
 alias gfu="g fetch upstream"
 alias gpu="g pull"
 alias gph="git push heroku master"
+
+alias h="heroku"
+alias h="h run rake db:migrate"
+alias ho="h open"
+alias hrc="h run rails console -r heroku"
+alias hl="h logs -t -r heroku"
+
+alias ta="tmux attach"

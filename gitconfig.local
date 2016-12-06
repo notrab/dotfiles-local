@@ -5,8 +5,10 @@
   username = notrab
 [github]
   username = notrab
+[credential]
+  helper = oxskeychain
 [core]
-  editor = vim
+  editor = atom --wait
   whitespace = trailing-space,cr-at-eol
 [alias]
   co = checkout
@@ -15,5 +17,11 @@
   aa = add --all
   amend = comment --amend
   fa = fetch --all
+  r = rebase
+  rc = rebase --continue
+  ra = rebase --abort
+  rs = rebase --skip
 [pull]
   rebase = true
+[push]
+  default = simple
