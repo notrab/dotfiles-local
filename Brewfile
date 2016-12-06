@@ -1,5 +1,6 @@
 brew 'httpie'
 brew 'highlight'
+brew 'yarn'
 
 tap 'caskroom/cask'
 
@@ -16,3 +17,5 @@ cask 'postman'
 cask 'sketch'
 cask 'spectacle'
 cask 'the-unarchiver'
+cask 'slack'
+cask '1password'
