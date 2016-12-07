@@ -49,7 +49,7 @@ fancy_echo "Fixing new-express-babel-starter bin permissions..."
 chmod 500 ~/.bin/new-express-babel-starter
 chmod 500 ~/.bin/new-rails-app
 
-tic '.iterm2/Solarized Dark.itermcolors'
+# tic '.iterm2/Solarized Dark.itermcolors'
 
 if [ -r "$HOME/.rcrc" ]; then
   fancy_echo "Updating dotfiles ..."
