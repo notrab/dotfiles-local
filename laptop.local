@@ -6,6 +6,7 @@ brew 'highlight'
 brew 'yarn'
 brew 'mysql'
 brew 'tree'
+brew 'gist'
 brew 'speedtest_cli'
 brew 'rbenv-default-gems'
 brew 'rbenv-binstubs'
@@ -34,23 +35,32 @@ cask '1password'
 cask 'docker-toolbox'
 EOF
 
+fancy_echo "Installing some default RubyGems..."
 gem_install_or_update "rails"
 gem_install_or_update "middleman"
 gem_install_or_update "jquery-rails"
 gem_install_or_update "lolcommits"
-
-fancy_echo "Cleaning up..."
-brew cleanup
-brew cask cleanup
 
 fancy_echo "Modifying macOS defaults..."
 sh ./.osx_defaults.sh
 
 fancy_echo "Fixing new-express-babel-starter bin permissions..."
 chmod 500 ~/.bin/new-express-babel-starter
+
+fancy_echo "Fixing new-rails-app bin permissions..."
 chmod 500 ~/.bin/new-rails-app
 
+fancy_echo "Installing some default NPM packages..."
+npm install -g json
+npm install -g nodemon
+npm install -g babel-cli
+npm install -g create-react-app
+
 # tic '.iterm2/Solarized Dark.itermcolors'
+
+fancy_echo "Cleaning up..."
+brew cleanup
+brew cask cleanup
 
 if [ -r "$HOME/.rcrc" ]; then
   fancy_echo "Updating dotfiles ..."
