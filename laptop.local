@@ -37,6 +37,7 @@ EOF
 gem_install_or_update "rails"
 gem_install_or_update "middleman"
 gem_install_or_update "jquery-rails"
+gem_install_or_update "lolcommits"
 
 fancy_echo "Cleaning up..."
 brew cleanup
