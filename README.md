@@ -16,7 +16,13 @@ You'll find my dotfiles hook into their configuration.
 new-rails-app [name]
 ```
 
+If you want to run the generator directly without using my dotfiles. You can.
+
+```bash
+rails new [name] -m https://raw.githubusercontent.com/notrab/dotfiles-local/master/rails/template.rb
+```
+
 ### New express app using babel
 ```bash
-new-express-babel-starter
+new-express-babel-starter [name]
 ```

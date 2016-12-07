@@ -1,10 +1,20 @@
 "*":
   core:
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "log"
+      "repositories"
+      "tmp"
+      "vendor"
+      ".DS_Store"
+    ]
     telemetryConsent: "limited"
   editor:
     fontFamily: "Operator Mono"
     fontSize: 15
   "exception-reporting":
+    invisibles: {}
     userId: "85619f8b-ad66-00ee-805c-c7e1e4990c17"
   welcome:
     showOnStartup: false

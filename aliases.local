@@ -1,8 +1,7 @@
 alias edf="cd ~/dotfiles-local && atom ."
 alias hosts="sudo atom /etc/hosts"
 
-alias l="ls -la"
-alias b="bundle install"
+alias l="ll"
 alias bc="bundle check"
 alias be="bundle exec"
 alias rs="bin/rails s"
@@ -22,3 +21,6 @@ alias hrc="h run rails console -r heroku"
 alias hl="h logs -t -r heroku"
 
 alias ta="tmux attach"
+
+alias d='docker $*'
+alias d-c='docker-compose $*'

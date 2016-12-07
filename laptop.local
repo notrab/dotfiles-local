@@ -9,6 +9,8 @@ brew 'tree'
 brew 'speedtest_cli'
 brew 'rbenv-default-gems'
 brew 'rbenv-binstubs'
+brew 'zsh-syntax-highlighting'
+brew 'zsh-autosuggestions'
 
 tap 'caskroom/cask'
 
@@ -17,6 +19,8 @@ cask 'spotify'
 cask 'vlc'
 cask 'mongodb'
 cask 'iterm2'
+cask 'quicklook-json'
+cask 'quicklook-csv'
 cask 'atom'
 cask 'robomongo'
 cask 'ngrok'
@@ -27,6 +31,7 @@ cask 'spectacle'
 cask 'the-unarchiver'
 cask 'slack'
 cask '1password'
+cask 'docker-toolbox'
 EOF
 
 gem_install_or_update "rails"
@@ -43,6 +48,8 @@ sh ./.osx_defaults.sh
 fancy_echo "Fixing new-express-babel-starter bin permissions..."
 chmod 500 ~/.bin/new-express-babel-starter
 chmod 500 ~/.bin/new-rails-app
+
+tic '.iterm2/Solarized Dark.itermcolors'
 
 if [ -r "$HOME/.rcrc" ]; then
   fancy_echo "Updating dotfiles ..."
