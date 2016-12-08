@@ -1,5 +1,6 @@
 uncomment_lines 'Gemfile', /gem 'redis'/
 
+gem 'redis-namespace'
 gem 'sidekiq'
 gem 'haml-rails'
 

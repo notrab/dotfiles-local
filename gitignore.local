@@ -14,3 +14,4 @@ Session.vim
 public/assets
 /node_modules
 /data/db
+*.rdb
