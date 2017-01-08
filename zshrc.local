@@ -4,14 +4,14 @@ export VISUAL=atom
 export EDITOR=atom
 
 export PATH="$HOME/.bin:$PATH"
-export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="./node_modules/.bin:$PATH"
+export PATH="$PATH:`yarn global bin`"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-if which tmux 2>&1 >/dev/null; then
-  if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-    tmux attach -t hack || tmux new -s hack; exit
-  fi
-fi
+#if which tmux 2>&1 >/dev/null; then
+#  if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+#    tmux attach -t hack || tmux new -s hack; exit
+#  fi
+#fi

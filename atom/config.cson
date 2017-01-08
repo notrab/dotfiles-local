@@ -1,5 +1,9 @@
 "*":
   core:
+    disabledPackages: [
+      "vim-mode-plus"
+      "vim-mode"
+    ]
     ignoredNames: [
       ".bundle"
       ".git"
@@ -8,13 +12,15 @@
       "tmp"
       "vendor"
       ".DS_Store"
+      "node_modules"
     ]
     telemetryConsent: "limited"
   editor:
     fontFamily: "Operator Mono"
-    fontSize: 15
+    fontSize: 16
   "exception-reporting":
     invisibles: {}
     userId: "85619f8b-ad66-00ee-805c-c7e1e4990c17"
+  "vim-mode-plus": {}
   welcome:
     showOnStartup: false
