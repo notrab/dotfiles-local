@@ -12,6 +12,7 @@ brew 'rbenv-default-gems'
 brew 'rbenv-binstubs'
 brew 'zsh-syntax-highlighting'
 brew 'zsh-autosuggestions'
+brew 'mongodb'
 
 tap 'caskroom/cask'
 

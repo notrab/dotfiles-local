@@ -28,6 +28,20 @@ config.generators do |g|
 EOF
   end
 
+  application(nil, env: 'production') do <<-EOF
+ActionMailer::Base.smtp_settings = {
+  :port           => ENV['MAILGUN_SMTP_PORT'],
+  :address        => ENV['MAILGUN_SMTP_SERVER'],
+  :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+  :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+  :domain         => ENV['MAILGUN_APP_DOMAIN'],
+  :authentication => :plain,
+}
+
+ActionMailer::Base.delivery_method = :smtp
+EOF
+  end
+
   file "Procfile", <<-EOF
 web: bundle exec puma -C config/puma.rb
 worker: bundle exec sidekiq -q default -q mailers
