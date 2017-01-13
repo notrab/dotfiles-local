@@ -13,6 +13,7 @@ brew 'rbenv-binstubs'
 brew 'zsh-syntax-highlighting'
 brew 'zsh-autosuggestions'
 brew 'mongodb'
+brew 'watchman'
 
 tap 'caskroom/cask'
 
@@ -56,6 +57,7 @@ npm install -g json
 npm install -g nodemon
 npm install -g babel-cli
 npm install -g create-react-app
+npm install -g react-native-cli
 
 # tic '.iterm2/Solarized Dark.itermcolors'
 

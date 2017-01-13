@@ -3,6 +3,7 @@
     disabledPackages: [
       "vim-mode-plus"
       "vim-mode"
+      "relative-numbers"
     ]
     ignoredNames: [
       ".bundle"
