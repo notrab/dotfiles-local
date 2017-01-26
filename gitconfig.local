@@ -21,7 +21,11 @@
   rc = rebase --continue
   ra = rebase --abort
   rs = rebase --skip
+  cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
 [pull]
   rebase = true
 [push]
   default = simple
+[branch]
+  autosetupmerge = true
+  autosetuprebase = always

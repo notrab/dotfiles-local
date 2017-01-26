@@ -1,8 +1,19 @@
 "*":
   core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "vim-mode-plus"
-      "vim-mode"
       "relative-numbers"
     ]
     ignoredNames: [
