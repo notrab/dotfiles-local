@@ -1,17 +1,16 @@
 uncomment_lines 'Gemfile', /gem 'redis'/
 
-gem 'redis-namespace'
 gem 'sidekiq'
 gem 'haml-rails'
 
 after_bundle do
   initializer "sidekiq.rb", <<-EOF
 Sidekiq.configure_server do |config|
-  config.redis = { url: ENV["REDIS_URL"], namespace: "sidekiq"}
+  config.redis = { url: ENV.fetch("REDIS_URL") }
 end
 
 Sidekiq.configure_client do |config|
-  config.redis = { url: ENV["REDIS_URL"], namespace: "sidekiq"}
+  config.redis = { url: ENV.fetch("REDIS_URL") }
 end
 EOF
 

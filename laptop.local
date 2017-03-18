@@ -13,6 +13,7 @@ brew 'rbenv-binstubs'
 brew 'zsh-syntax-highlighting'
 brew 'zsh-autosuggestions'
 brew 'mongodb'
+brew 'rethinkdb'
 brew 'watchman'
 
 tap 'caskroom/cask'
@@ -37,11 +38,9 @@ cask '1password'
 cask 'docker-toolbox'
 EOF
 
-fancy_echo "Installing some default RubyGems..."
+fancy_echo "Installing some default gems..."
 gem_install_or_update "rails"
-gem_install_or_update "middleman"
-gem_install_or_update "jquery-rails"
-gem_install_or_update "lolcommits"
+gem_install_or_update "mailcatcher"
 
 fancy_echo "Modifying macOS defaults..."
 sh ./.osx_defaults.sh
@@ -58,8 +57,7 @@ npm install -g nodemon
 npm install -g babel-cli
 npm install -g create-react-app
 npm install -g react-native-cli
-
-# tic '.iterm2/Solarized Dark.itermcolors'
+npm install -g express
 
 fancy_echo "Cleaning up..."
 brew cleanup
