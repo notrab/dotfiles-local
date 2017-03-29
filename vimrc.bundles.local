@@ -1,0 +1,9 @@
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-scripts/gitignore'
+Plug 'altercation/vim-colors-solarized'
+Plug 'tmux-plugins/vim-tmux'
+Plug 'pangloss/vim-javascript', { 'branch': 'develop' }
+Plug 'othree/html5.vim'
+Plug 'leshill/vim-json'
+Plug 'tpope/vim-markdown'
+Plug 'mxw/vim-jsx'

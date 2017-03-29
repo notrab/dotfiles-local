@@ -1,0 +1,64 @@
+autocmd VimResized * wincmd =
+
+let mapleader = ","
+noremap \ ,
+
+let g:ctrlp_max_height = 20
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_map = '<leader>f'
+nnoremap <leader>. :CtrlPTag<cr>
+let g:jsx_ext_required = 0
+set statusline=%F%m%r%h%w\  "fullpath and status modified sign
+set statusline+=\ %y "filetype
+set statusline+=\ %{fugitive#statusline()}
+
+syntax enable
+
+set number
+set relativenumber
+set numberwidth=3
+set softtabstop=2
+set noshowmode
+set noesckeys
+set ttimeout
+set ttimeoutlen=1
+set laststatus=2
+set history=5000
+set nowrap
+set nocompatible
+set ignorecase smartcase
+set incsearch
+set hlsearch
+set nobackup
+set nowritebackup
+set noswapfile
+set synmaxcol=500
+set wildignore+=*.o,*.obj,.git,node_modules,_site,*.class,*.zip,*.aux
+set colorcolumn=120
+set cursorline
+hi cursorline cterm=none term=none
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+nnoremap <esc> :noh<return><esc>
+nnoremap <CR> :noh<CR><CR>
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
+
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_use_caching = 0
+endif
+
+map <Leader>nf :e <C-R>=expand("%:p:h") . "/" <CR>
+
+autocmd BufNewFile,BufRead *.json set ft=javascript
+autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufRead,BufNewFile {Gemfile,Rakefile,config.ru} set ft=ruby
+autocmd BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown
+autocmd FileType markdown setlocal wrap " Set wrap for markdown
+autocmd FileType qf setlocal wrap linebreak
+autocmd BufNewFile,BufRead .babelrc setlocal filetype=json
+autocmd BufNewFile,BufRead .eslintrc setlocal filetype=json
+highlight Comment cterm=italic
+autocmd FileType javascript.jsx highlight xmlAttrib cterm=italic

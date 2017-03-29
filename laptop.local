@@ -15,6 +15,7 @@ brew 'zsh-autosuggestions'
 brew 'mongodb'
 brew 'rethinkdb'
 brew 'watchman'
+brew 'flow'
 
 tap 'caskroom/cask'
 

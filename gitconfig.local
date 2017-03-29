@@ -11,6 +11,8 @@
   editor = atom --wait
   whitespace = trailing-space,cr-at-eol
 [alias]
+  unstage = reset HEAD
+  undo-commit = reset --soft HEAD^
   co = checkout
   b = branch
   di = diff
