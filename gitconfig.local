@@ -17,7 +17,7 @@
   b = branch
   di = diff
   aa = add --all
-  amend = comment --amend
+  amend = commit --amend
   fa = fetch --all
   r = rebase
   rc = rebase --continue

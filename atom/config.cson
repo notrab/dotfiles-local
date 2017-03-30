@@ -38,7 +38,8 @@
   "exception-reporting":
     invisibles: {}
     userId: "85619f8b-ad66-00ee-805c-c7e1e4990c17"
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "tree-view":
     hideIgnoredNames: true
   "vim-mode-plus": {}

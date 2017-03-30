@@ -1,8 +1,5 @@
 autocmd VimResized * wincmd =
 
-let mapleader = ","
-noremap \ ,
-
 let g:ctrlp_max_height = 20
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_match_window_reversed = 0
@@ -12,8 +9,6 @@ let g:jsx_ext_required = 0
 set statusline=%F%m%r%h%w\  "fullpath and status modified sign
 set statusline+=\ %y "filetype
 set statusline+=\ %{fugitive#statusline()}
-
-syntax enable
 
 set number
 set relativenumber
@@ -28,11 +23,7 @@ set history=5000
 set nowrap
 set nocompatible
 set ignorecase smartcase
-set incsearch
 set hlsearch
-set nobackup
-set nowritebackup
-set noswapfile
 set synmaxcol=500
 set wildignore+=*.o,*.obj,.git,node_modules,_site,*.class,*.zip,*.aux
 set colorcolumn=120
