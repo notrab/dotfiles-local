@@ -1,5 +1,6 @@
 "*":
   core:
+    closeDeletedFileTabs: true
     customFileTypes:
       "source.ini": [
         ".buckconfig"
@@ -21,25 +22,34 @@
       "log"
       "repositories"
       "tmp"
-      "vendor"
       ".DS_Store"
       "node_modules"
       "data"
       "build"
+      ".next"
     ]
+    projectHome: "/Users/notrab/code"
     telemetryConsent: "limited"
     themes: [
       "one-light-ui"
-      "solarized-light-syntax"
+      "one-light-syntax"
     ]
   editor:
     fontFamily: "Operator Mono"
     fontSize: 17
+    invisibles: {}
   "exception-reporting":
     invisibles: {}
     userId: "85619f8b-ad66-00ee-805c-c7e1e4990c17"
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      showInStatusBar: true
+    prettierEslintOptions: {}
+    prettierOptions:
+      semi: false
+      singleQuote: true
   "tree-view":
     hideIgnoredNames: true
   "vim-mode-plus": {}
