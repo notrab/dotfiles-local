@@ -44,7 +44,6 @@
   "linter-ui-default": {}
   "prettier-atom":
     formatOnSaveOptions:
-      enabled: true
       showInStatusBar: true
     prettierEslintOptions: {}
     prettierOptions:
@@ -52,6 +51,7 @@
       singleQuote: true
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   "vim-mode-plus": {}
   welcome:
     showOnStartup: false

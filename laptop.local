@@ -10,12 +10,15 @@ brew 'gist'
 brew 'speedtest_cli'
 brew 'rbenv-default-gems'
 brew 'rbenv-binstubs'
-brew 'zsh-syntax-highlighting'
-brew 'zsh-autosuggestions'
 brew 'mongodb'
 brew 'rethinkdb'
 brew 'watchman'
 brew 'flow'
+brew 'openssl'
+brew 'certbot'
+brew 'ssh-copy-id'
+brew 'shellcheck'
+brew 'jsonlint'
 
 tap 'caskroom/cask'
 
@@ -35,7 +38,6 @@ cask 'spectacle'
 cask 'the-unarchiver'
 cask 'slack'
 cask '1password'
-cask 'docker-toolbox'
 EOF
 
 fancy_echo "Installing some default gems..."

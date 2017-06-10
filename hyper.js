@@ -92,13 +92,9 @@ module.exports = {
 	//   `@company/project`
 	//   `project#1.0.1`
 	plugins: [
-		// "hyperterm-solarized-dark",
 		'hyper-statusline',
 		'hyperterm-paste',
 		'hypercwd',
-		'hyperterm-tabs',
-		'hyperlinks',
-		'hypertheme',
 		'hyper-atom-dark-transparent'
 	],
 
