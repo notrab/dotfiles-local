@@ -1,3 +1,11 @@
+echo "Disable Java within Safari"
+defaults write com.apple.Safari \
+  com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabled \
+  -bool false
+defaults write com.apple.Safari \
+  com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabledForLocalFiles \
+  -bool false
+
 echo "Disable local Time Machine backups"
 hash tmutil &> /dev/null && sudo tmutil disablelocal
 
@@ -7,6 +15,8 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 echo "Immediately require password after sleep or screensaver"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
+sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
+sudo launchctl load /System/Library/LaunchDaemons/com.apple.alf.agent.plist 2>/dev/null
 
 echo "Enable tap to click"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
@@ -64,6 +74,10 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 echo "Set bottom left hot corner for screensaver"
 defaults write com.apple.dock wvous-bl-corner -int 5
 defaults write com.apple.dock wvous-bl-modifier -int 0
+
+sudo defaults write /Library/Preferences/com.apple.loginwindow \
+  LoginwindowText \
+  "Found this computer? Please contact Jamie on +44 (0)7816934880"
 
 echo "Disable the iTerm 'Are you sure you want to quit?' dialog"
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
